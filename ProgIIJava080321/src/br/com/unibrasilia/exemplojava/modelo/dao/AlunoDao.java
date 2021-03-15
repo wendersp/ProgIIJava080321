@@ -1,7 +1,7 @@
 
 package br.com.unibrasilia.exemplojava.modelo.dao;
 
-import br.com.unibrasilia.exemplojava.modelo.objetos.Aluno;
+import br.com.unibrasilia.exemplojava.modelo.objeto.Aluno;
 import java.util.List;
 
 /**

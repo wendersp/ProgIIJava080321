@@ -1,8 +1,8 @@
 
 package br.com.unibrasilia.exemplojava.visao;
 
-import br.com.unibrasilia.exemplojava.modelo.objetos.Aluno;
-import br.com.unibrasilia.exemplojava.modelo.objetos.Curso;
+import br.com.unibrasilia.exemplojava.modelo.objeto.Aluno;
+import br.com.unibrasilia.exemplojava.modelo.objeto.Curso;
 
 /**
  *

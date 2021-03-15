@@ -1,4 +1,4 @@
-package br.com.unibrasilia.exemplojava.modelo.objetos;
+package br.com.unibrasilia.exemplojava.modelo.objeto;
 
 /**
  *
