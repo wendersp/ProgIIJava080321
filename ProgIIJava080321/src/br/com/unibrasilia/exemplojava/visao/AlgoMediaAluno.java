@@ -16,16 +16,17 @@ public class AlgoMediaAluno {
         double media = 0;
         for (int i = 0; i < nota.length; i++) {
             soma += nota[i];
-        }
+        }     
+        
         media = soma / (nota.length);
-
         if (media >= 7) {            
             JOptionPane.showMessageDialog(null, "O Aluno esta Aprovado com a meida "  + media + "!");
         } else if (media >= 4) {            
             JOptionPane.showMessageDialog(null, "O Aluno esta de N3 com a meida "  + media + "!");
         } else {            
             JOptionPane.showMessageDialog(null, "O Aluno esta Reprovado com a meida "  + media + "!");
-        }        
+        }  
+        double y = 0; 
     }
 
 }
