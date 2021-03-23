@@ -21,9 +21,9 @@ public class ExemploJava {
         
         Aluno aluno01 = new Aluno(); 
         Aluno aluno02 = new Aluno();
-        Aluno aluno03 = new Aluno(3, "Jose", "M", 30, "Av 8", 1.70, curso1);
+        Aluno aluno03 = new Aluno(3l, "Jose", "M", 30, "Av 8", 1.70, curso1);
         
-        aluno01.setId(1);
+        aluno01.setId(1l);
         aluno01.setNome("Joao");
         aluno01.setIdade(21);
         aluno01.setSexo("M");
@@ -32,7 +32,7 @@ public class ExemploJava {
         aluno01.setCurso(curso1);
         
         
-        aluno02.setId(2);
+        aluno02.setId(2l);
         aluno02.setNome("Maria");
         aluno02.setIdade(20);
         aluno02.setSexo("F");

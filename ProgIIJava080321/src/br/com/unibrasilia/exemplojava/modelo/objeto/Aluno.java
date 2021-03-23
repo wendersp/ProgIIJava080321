@@ -1,32 +1,42 @@
 package br.com.unibrasilia.exemplojava.modelo.objeto;
 
+import java.util.Objects;
+
 /**
  *
  * @author wender
  */
 public class Aluno {
 
-     private int id;
-     private String nome;
-     private String sexo;
-     private int idade;
-     private String endereco;
-     private double altura;
-     private Curso curso;
+    private Long id;
+    private String nome;
+    private String sexo;
+    private int idade;
+    private String endereco;
+    private double altura;
+    private Curso curso;
 
     public Aluno() {
-        
+
     }
 
-       
-    public Aluno(int id, String nome, String sexo, int idade,
+    public Aluno(Long id, String nome, String sexo, int idade) {
+        this.id = id;
+        this.nome = nome;        
+        this.sexo = sexo;        
+        this.idade = idade;
+    }
+    
+    
+
+    public Aluno(Long id, String nome, String sexo, int idade,
             String endereco, double altura, Curso curso) {
         this.id = id;
         this.nome = nome;
         this.sexo = sexo;
         this.idade = idade;
         this.endereco = endereco;
-        this.altura = altura;       
+        this.altura = altura;
         this.curso = curso;
     }
 
@@ -40,18 +50,17 @@ public class Aluno {
         System.out.println("Endereço.: " + this.endereco);
         System.out.println("Curso....: " + this.curso.getId() + " - " + this.curso.getNome());
     }
-    
-        
+
     @Override
     public String toString() {
         return "Aluno{" + "id=" + id + ", nome=" + nome + ", sexo=" + sexo + ", idade=" + idade + ", endereco=" + endereco + ", altura=" + altura + '}';
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -103,6 +112,31 @@ public class Aluno {
         this.curso = curso;
     }
 
-    
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 97 * hash + Objects.hashCode(this.id);
+        return hash;
+    }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Aluno other = (Aluno) obj;
+        if (!Objects.equals(this.id, other.id)) {
+            return false;
+        }
+        return true;
+    }
+
+    
+    
 }
